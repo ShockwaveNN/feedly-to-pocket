@@ -1,4 +1,5 @@
 consumer.key
+.idea/*.*
 *.gem
 *.rbc
 /.config
