@@ -17,7 +17,7 @@ class Pocket
   def login
     key = send_post_request('https://getpocket.com/v3/oauth/request', {consumer_key: @consumer_key, redirect_uri: @redirect_url})[:code]
     @logger.info('Received oath key')
-    `google-chrome-stable "https://getpocket.com/auth/authorize?request_token=#{key}&redirect_uri=#{@redirect_url}"`
+    `sensible-browser "https://getpocket.com/auth/authorize?request_token=#{key}&redirect_uri=#{@redirect_url}"`
     sleep 5
     @access_token = send_post_request("https://getpocket.com/v3/oauth/authorize", {consumer_key: @consumer_key, code: key})[:access_token]
     @logger.info('Received access token')
