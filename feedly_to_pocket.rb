@@ -2,7 +2,7 @@ require_relative 'lib/feedly_saved_for_later'
 require_relative 'lib/pocket'
 
 
-filename = '/home/shock/Downloads/FeedlySavedForLater1401814657694.txt'
+filename = './saved_for_later.txt'
 
 feedly_saved_for_later = FeedlySavedForLater.new
 feedly_saved_for_later.parse_feedly_file(filename)
