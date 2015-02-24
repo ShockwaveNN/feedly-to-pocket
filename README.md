@@ -1,3 +1,5 @@
+Project not longer maintained, use https://github.com/ShockwaveNN/pocket-sinatra-interface instead
+
 feedly-to-pocket
 ================
 Semi-automatic export from feedly 'Saved for later' list to pocket
